@@ -5,15 +5,15 @@
 
 ## Part 1 Answers
 
-1. mkdir DirA
-2. mkdir "Dir B"
-3. cd "Dir B"
+1. `mkdir DirA`
+2. `mkdir "Dir B"`
+3. `cd "Dir B"`
 4. DirA is a better naming convention as it doesn't require quotes.
-5. mv "Dir B" DirB
+5. `mv "Dir B" DirB`
 
 ## Part 2 Answers
 
-1. vim test.txt
+1. `vim test.txt`
 2. File contents:
 
 ```
@@ -24,8 +24,8 @@ can write some lines in Vim
 
 ## Part 3 Answers
 
-1. cp test.txt .hiddentext.txt
-2. ls -la
+1. `cp test.txt .hiddentext.txt`
+2. `ls -la`
 
 ## Part 4 Answers
 
