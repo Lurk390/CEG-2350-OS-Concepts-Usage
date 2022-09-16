@@ -6,8 +6,8 @@
 ## Part 1 Answers
 
 1. Verify here that input.txt made it to GitHub in your `Lab03` folder
-2.
-3.
+2. `sort input.txt`
+3. `sort -o output.txt input.txt`
 
 ## Script Usage Guide
 
