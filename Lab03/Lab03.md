@@ -11,22 +11,22 @@
 
 ## Script Usage Guide
 
-1. How to run
-2. What extensions are expected
-3. What is the output
+1. `sorting-party input.txt`
+2. only `.txt` files
+3. `output.txt`
 
 ## Part 5 Answers
 
-1. PATH =
-2.
-3. Command:
-   - Full path:
-4. PATH =
-   - Difference:
-5.
-6.
-7.
+1. PATH = `/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local`
+2. `~/bin/
+3. Command: `mkdir ~/bin`
+   - Full path: `/home/ubuntu/bin`
+4. PATH = `/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr`
+   - Difference: `/home/ubuntu/bin` is added to the beginning of the `PATH` environment variable.
+5. `cp sorting-party ~/bin`
+6. `chmod +x sorting-party`
+7. User, group, and other all have execute permission
 
 ## Extra Credit
 
-1. Note here if you did the extra credit so the tas can verify :)
+1. Extra credit is completed
