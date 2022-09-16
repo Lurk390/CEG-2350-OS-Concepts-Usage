@@ -1,0 +1,11 @@
+#!/bin/bash
+
+fname=$1
+RED='\033[0;31m'
+
+if [[ $fname == *.txt ]]
+then
+	sort -o output.txt $fname
+else
+	echo -e ${RED}"File extension not allowed"
+fi
