@@ -5,16 +5,21 @@
 
 ## namechange Usage Guide
 
-Examples of script usage and output. This should be enough info that  
-you can hand this and the script to someone not in this course and they  
-would be able to understand what your script does and how to use it.
+Renames a given file.
 
-Use good markdown so that this documentation is pretty and clean on GitHub.
+Usage: `./namechange.sh -f 'find' -r 'replace' 'file to modify`
 
-## bulkrenamer Usage Guide - Remove if not doing extra credit
+Examples:
+ - `./namechange.sh -f '\s' -r '' 'file name.txt'` will change the file `file name.txt` to `filename.txt`
 
-Examples of script usage and output. This should be enough info that  
-you can hand this and the script to someone not in this course and they  
-would be able to understand what your script does and how to use it.
 
-Use good markdown so that this documentation it is pretty and clean on GitHub.
+## bulkrename Usage Guide - Remove if not doing extra credit
+
+Renames all files in the current directory.
+
+Usage: `./bulkrename.sh -f 'find' -r 'replace`
+
+Examples:
+ - `./bulkrename.sh -f '.jgp' -r '.jpg'` will rename all files that end with .jgp to .jpg
+ - `./bulkrename.sh -f '\s' -r '-'` will replace all spaces with `-`
+ - `./bulkrename.sh -f 'foo' -r 'bar'` will replace all files with `foo` with `bar`
