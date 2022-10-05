@@ -1,8 +1,7 @@
 #!/bin/bash
 
 printHelp() {
-	echo "Renames all files in current directory"
-	echo "Usage: bulkrename -f '"find"' -r '"replace""
+	echo "Usage: ./bulkrename.sh -f '"find"' -r '"replace""
  	echo "-f The text to find in the filenames"
  	echo "-r The replacement text for the new filenames"
 }

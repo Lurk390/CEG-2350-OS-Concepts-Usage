@@ -1,7 +1,7 @@
 #!/bin/bash
 
 printHelp() {
-	echo "Usage: namechange -f '"find"' -r '"replace"' '"file to modify"'"
+	echo "Usage: ./namechange.sh -f '"find"' -r '"replace"' '"file to modify"'"
  	echo "-f The text to find in the filename"
  	echo "-r The replacement text for the new filename"
 }
