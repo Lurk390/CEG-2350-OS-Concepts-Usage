@@ -5,17 +5,18 @@
 
 ## Part 1 Answers
 
-1. CPU
-2. GPU
-3. Physical memory
-4. Virtual memory
-5. Disk type / model
-6. Total disk size
-7. Remaining space
-8. File system
-9. BIOS / UEFI
-10. BIOS / UEFI access
+1. Intel Core i7-9750H, 6 cores, 12 logicial cores
+2. Intel UHD Graphics 630
+   NVIDIA GeForce GTX 1650
+3. 8 GB
+4. 20.48 GB
+5. NVMe SSD / SK Hynix PC601
+6. 236 GB
+7. 87.2 GB
+8. NTFS
+9. UEFI / 1.16.0
+10. Restart computer and spam press F2 during POST
 
 ## Extra Credit - VM Manager
 
-- Write here what VM Manager software you installed
+- VirtualBox
