@@ -44,4 +44,5 @@
     - Open the terminal by clicking "Activites" in the top left corner and searching terminal
     - Type `sudo snap install --classic code` (user will need to be added to the sudoers group first)
 4. Steps to connect to your AWS instance from your VM.
-    -
+    - Copy the `config` file and `ceg2350key` (private ssh key) into the `.ssh` folder in the VM user's home directory
+    - Ensure that the permissions of the private key file are secure (only user should have read permissions)
