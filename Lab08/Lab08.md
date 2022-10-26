@@ -5,23 +5,51 @@
 
 ## Part 1 Answers
 
-1.
-2.
+1. `blkid` shows `xvda1` as the currently mounted block device
+2. Yes, `xvda`, `xvda1`, and `xvdb`
 3. `gdisk` main menu options
-   - `p`
-   - `o`
-   - `n`
-   - `i`
-   - `w`
-4. Using the `gdisk` utility on the disk:
-5.
-6.
-7.
+   - `p`: Displays basic partition summary data 
+   - `o`: Clears out all partition data
+   - `n`: Creates a new partition
+   - `i`: Displays a summary of partition types
+   - `w`: Writes data
+4. Using the `gdisk` utility on the disk: `sudo gdisk /dev/xvdb`
+   ```
+   GPT fdisk (gdisk) version 1.0.5
+
+   Partition table scan:
+     MBR: not present
+     BSD: not present
+     APM: not present
+     GPT: not present
+
+   Creating new GPT entries in memory.
+
+   Command (? for help): n
+   Partition number (1-128, default 1):
+   First sector (34-8388574, default = 2048) or {+-}size{KMGTP}:
+   Last sector (2048-8388574, default = 8388574) or {+-}size{KMGTP}:
+   Current type is 8300 (Linux filesystem)
+   Hex code or GUID (L to show codes, Enter = 8300):
+   Changed type of partition to 'Linux filesystem'
+
+   Command (? for help): w
+
+   Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+   PARTITIONS!!
+
+   Do you want to proceed? (Y/N): Y
+   OK; writing new GUID partition table (GPT) to /dev/xvdb.
+   The operation has completed successfully.
+   ```
+5. `mkfs -t ext4 /dev/xvdb`
+6. 
+7. 
 8. Skip - trust you to do it ;)
-9.
-10.
-11.
-12.
+9. 
+10. 
+11. 
+12. 
 
 ## Part 2 Answers
 
