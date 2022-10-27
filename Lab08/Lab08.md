@@ -42,7 +42,7 @@
    OK; writing new GUID partition table (GPT) to /dev/xvdb.
    The operation has completed successfully.
    ```
-5. `mkfs -t ext4 /dev/xvdb1`
+5. `sudo mkfs -t ext4 /dev/xvdb1`
 6. 
 7. 
 8. Skip - trust you to do it ;)
