@@ -59,24 +59,24 @@
 
 ## Part 2 Answers
 
-1.
+1. `vim original.txt`
 2. For `original.txt` identify:
-   - Command to find the following info about `original.txt`:
-   - inode number of `original.txt`:
-   - number of blocks storing `original.txt`:
-   - number of links to `original.txt`:
-3. Command to create a hard link to `original.txt`:
-   - What identifiers indicate a hard link was created?
-   - Does modifying the hard linked file modify `original.txt`? Explain
-4. Command to create a symbolic link to `original.txt`
-   - What identifiers indicate a symbolic link was created?
-   - If `original.txt` was deleted, and a new `original.txt` was created, would the sym link still work? Explain
-5. Command to create a copy of `original.txt`
-   - Does modifying the copied file modify `original.txt`? Explain
-6. Command to move `original.txt` to another directory.
-   - Does it have the same inode? Explain
-   - Was the hard link you created affected? Explain
-   - Was the symbolic link you created affected? Explain
+   - command to find the following info about `original.txt`: `stat original.txt`
+   - inode number of `original.txt`: 1036712
+   - number of blocks storing `original.txt`: 8
+   - number of links to `original.txt`: 1
+3. `ln original.txt hltest`
+   - running `stat original.txt` shows that the number of links increased to 2 
+   - both files point to the same inode on the disk so modifying the contents of either file will reflect on both of them
+4. `ln -s original.txt sltest`
+   - running `ls -l` shows `sltest` pointing to `original.txt`, indicating that it is a symbolic link
+   - deleting and recreating `original.txt` does not break the sym link as it is simply a pointer to a file/directory
+5. `cp original.txt cptest`
+   - modifying the copied file does not modify `original.txt` as they are seperate files pointing to difference inodes.
+6. `mv original.txt testfolder/`
+   - moving the file to another directory does not change the inode number as it is still the same file, just in a different location
+   - the hard link is unaffected by the directory change as both files still point to the same inode which was unchanged
+   - the symbolic link is broken by the directory change as it relies on filepath of the source folder which was changed
 
 ## Extra Credit Answers
 
