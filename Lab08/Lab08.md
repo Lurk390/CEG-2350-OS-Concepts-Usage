@@ -8,11 +8,11 @@
 1. `blkid` shows `xvda1` as the currently mounted block device
 2. Yes, `xvda`, `xvda1`, and `xvdb`
 3. `gdisk` main menu options
-   - `p`: Displays basic partition summary data 
-   - `o`: Clears out all partition data
-   - `n`: Creates a new partition
-   - `i`: Displays a summary of partition types
-   - `w`: Writes data
+    - `p`: Displays basic partition summary data 
+    - `o`: Clears out all partition data
+    - `n`: Creates a new partition
+    - `i`: Displays a summary of partition types
+    - `w`: Writes data
 4. Using the `gdisk` utility on the disk: `sudo gdisk /dev/xvdb`
    ```
    GPT fdisk (gdisk) version 1.0.5
@@ -43,13 +43,19 @@
    The operation has completed successfully.
    ```
 5. `sudo mkfs -t ext4 /dev/xvdb1`
-6. 
-7. 
-8. Skip - trust you to do it ;)
-9. 
-10. 
-11. 
-12. 
+6. `sudo mkdir expanse` in `/mnt/` directory
+7. `sudo mount /dev/xvdb1 /mnt/expanse`
+8. `sudo vim testfile.txt`
+    - contains the text "testing123"
+9. `sudo strings /dev/xvdb1`
+    - outputs printable character sequences that are at least 4 characters long
+    - "testfile.txt" and "testing123" show up in the output
+10. `sudo rm testfile.txt`
+    - "testfile.txt" and "testing123" are still showing in the `strings` output
+11. `shred -u testfile.txt`
+    - running `sudo strings /dev/xvdb1` again shows that `testfile.txt` and its contents are removed from the output, confirming that the file has been completely removed off of the disk
+12. `sudo umount /dev/xvdb1`
+    - `expanse` directory still exists in `/mnt`, however, it is empty
 
 ## Part 2 Answers
 
