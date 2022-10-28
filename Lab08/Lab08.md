@@ -75,8 +75,8 @@
    - modifying the copied file does not modify `original.txt` as they are seperate files pointing to difference inodes.
 6. `mv original.txt testfolder/`
    - moving the file to another directory does not change the inode number as it is still the same file, just in a different location
-   - the hard link is unaffected by the directory change as both files still point to the same inode which was unchanged
-   - the symbolic link is broken by the directory change as it relies on filepath of the source folder which was changed
+   - the hard link is unaffected as both files still point to the same inode which was unchanged
+   - the symbolic link is broken as it relies on filepath of the source folder which was changed
 
 ## Extra Credit Answers
 
