@@ -5,7 +5,7 @@
 
 ## Part 1 Answers
 
-- Make sure infinity is in your Lab09 folder in GitHub
+- [Link to script](infinity)
 
 ## Part 2 Answers
 
