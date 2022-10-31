@@ -5,18 +5,20 @@
 
 ## Part 1 Answers
 
-- [Link to script](infinity)
+1. `vim infinity`
+2. [Link to script](infinity) 
+3. `chmod u+x infinity`
 
 ## Part 2 Answers
 
 1. Getting started
-   - Command to find the PID:
-   - PID of "Terminal A":
-   - PID of "Terminal B":
+   - Command to find the PID: `ps -e`
+   - PID of "Terminal A": 1659
+   - PID of "Terminal B": 1800
 2. Using `./` to run `infinity` in Terminal B
-   - PID of script:
-   - Command to kill script:
-   - Effects of running the script:
+   - PID of script: 1861
+   - Command to kill script: `kill 1861`
+   - Cannot use terminal while script is running
 3. Using `source` to run `infinity` in Terminal B
    - PID of script:
    - Command to kill the script:
