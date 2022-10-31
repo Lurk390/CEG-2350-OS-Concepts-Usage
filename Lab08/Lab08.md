@@ -81,7 +81,7 @@
 ## Extra Credit Answers
 
 1. `sudo cp /etc/fstab /etc/fstab.bak`
-2. Line added to `/etc/fstab`:
+2. Line added to `/etc/fstab` (`UUID` was copied from `blkid` output):
 ```
 UUID="b9441bf5-9f9a-4c4e-98ff-8c95660cd9cf"     /mnt/expanse    ext4    defaults,discard        0 0
 ```
