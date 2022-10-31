@@ -80,8 +80,13 @@
 
 ## Extra Credit Answers
 
-Line added to `/etc/fstab`:
-
+1. `sudo cp /etc/fstab /etc/fstab.bak`
+2. Line added to `/etc/fstab`:
 ```
-Insert line here
+UUID="b9441bf5-9f9a-4c4e-98ff-8c95660cd9cf"     /mnt/expanse    ext4    defaults,discard        0 0
 ```
+3. Running `df` after editing `/etc/fstab` and running `sudo mount -a` shows a new line:
+`/dev/xvdb1       4045516      24   3819448   1% /mnt/expanse`
+    - `/mnt/expanse` mount was successful
+4. After rebooting, running `df` still shows the new line:
+`/dev/xvdb1       4045516      24   3819448   1% /mnt/expanse`
