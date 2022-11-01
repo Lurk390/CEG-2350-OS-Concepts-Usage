@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# infinite loop
+# infinite while loop
 while [ True ]
 do
     # print "Still going!" into still-going.txt
