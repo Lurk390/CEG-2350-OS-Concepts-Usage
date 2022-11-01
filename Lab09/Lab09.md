@@ -39,13 +39,25 @@
 
 ## Part 3 Answers
 
-1.
-2.
+1. `git branch updates`
+2. `gitch checkout updates`
 3.
-4.
-5. Confirmed?
-6.
-7.
-8.
-9. Confirmed?
-10.
+```
+#!/bin/bash
+
+# infinite while loop
+while [ True ]
+do
+    # print "Still going!" into still-going.txt
+    echo "Still going!" >> still-going.txt
+    # sleep for 15 seconds
+    sleep 15
+done
+```
+4. `git commit -a -m "Added comments"`, then `git push`
+5. Edits confirmed only in `updates` branch
+6. `git checkout main`
+7. `git merge updates`
+8. `git push`
+9. Edits confirmed on `main` branch
+10. `git checkout`
