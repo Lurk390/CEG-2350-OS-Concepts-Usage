@@ -1,7 +1,10 @@
 #!/bin/bash
 
+# infinite loop
 while [ True ]
 do
+    # print "Still going!" into still-going.txt
     echo "Still going!" >> still-going.txt
+    # sleep for 15 seconds
     sleep 15
 done
