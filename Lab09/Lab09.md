@@ -20,9 +20,9 @@
    - Command to kill script: `kill 1861`
    - Cannot use terminal while script is running
 3. Using `source` to run `infinity` in Terminal B
-   - PID of script:
-   - Command to kill the script:
-   - Effects of killing the script: 
+   - PID of script: 7105 (PID of sleep, script not showing from `ps -e` command
+   - Command to kill the script: kill 7105
+   - Effects of killing the script: script outputs "Terminated"
 4. Running `infinity` as a background job in Terminal B
    - Command to run script in background: `./infinity &`
    - Job ID of script: 1
