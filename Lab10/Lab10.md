@@ -5,21 +5,21 @@
 
 ## Part 1 Answers
 
-- Add your source code to your Lab10 folder in GitHub
+- [Link to source code](Repeat.java)
 
 ## Part 2 Answers
 
-1. Compiler:
-   - Location:
-   - Version:
-2. Command to compile:
-3. Command to run:
+1. Compiler: Java
+   - Location: `which java`: `/usr/bin/java`
+   - Version: `java -version`: v11.0.16
+2. Command to compile: `javac Repeat.java`
+3. Command to run: `java Repeat`
 
-- Add your compiled code to your Lab10 folder in GitHub
+- [Link to compiled code](Repeat.class)
 
 ## Part 3 Answers
 
-- Add your Makefile to your Lab10 folder in GitHub
+- [Link to Makefile](Makefile)
 
 ## Extra Credit - Dependent Answers - Delete the section if not doing :)
 
