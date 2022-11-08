@@ -21,7 +21,7 @@
    - Cannot use terminal while script is running
 3. Using `source` to run `infinity` in Terminal B
    - PID of script: 1800 (PID of `bash` for Terminal B; `source` runs the script in current shell)
-   - Command to kill the script: kill -INT 1800
+   - Command to kill the script: `kill -INT 1800`
    - Effects of killing the script: script stops after executing the next command
 4. Running `infinity` as a background job in Terminal B
    - Command to run script in background: `./infinity &`
