@@ -6,16 +6,16 @@
 ## Part 1 Answers:
 
 1. `tar` options:
-   - `-c`:
-   - `-v`:
-   - `-f`:
-   - `-z`:
-   - `-x`:
-2. Command(s):
+   - `-c`: creates a new archive
+   - `-v`: verbosely lists files processed
+   - `-f`: uses file archives
+   - `-z`: filters the archive through gzip
+   - `-x`: extracts files from an archive
+2. Command(s): `tar -zcvf testfolder.tar.gz testfolder/`
 
 ## Part 2 Answers:
 
-1. Command:
+1. Command: ``
 2. `sftp` options:
    - `ls`:
    - `lls`:
