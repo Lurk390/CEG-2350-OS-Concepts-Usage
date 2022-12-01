@@ -15,21 +15,21 @@
 
 ## Part 2 Answers:
 
-1. Command: ``
+1. Command: `sftp ceg2350`
 2. `sftp` options:
-   - `ls`:
-   - `lls`:
-   - `put`:
-   - `get`:
-3. Command(s): ` `
-4. Command(s): ` `
+   - `ls`: Displays remote directory listing
+   - `lls`: Displaus local directory listing
+   - `put`: Uploads file
+   - `get`: Downloads file
+3. Command(s): `get testfolder.tar.gz`
+4. Command(s): `tar –xvzf testfolder.tar.gz`
 
 ## Part 3 Answers:
 
-1.
-2.
-3.
-4.
+1. `sudo adduser mahmoud`
+2. `ssh-keygen -t ed25519 -C "elbasiouny.2@wright.edu"`
+3. Copied the contents of `ed25519.pub` into `~/.ssh/authorized_keys`
+4. `ssh ceg2350-mahmoud`
 
 ## Part 4 Answers
 
