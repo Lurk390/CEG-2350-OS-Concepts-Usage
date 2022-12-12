@@ -35,12 +35,13 @@
 
 1. Translate to network prefixes + CIDR notation:
    - Sample: `10.0.0.0 - 10.0.1.255` = `10.0.0.0/23` OR `10.0.1.0/23`
-   - `130.108.0.0 - 130.108.255.255` =
-   - `10.0.0.0 - 10.0.0.255` =
-   - `your_public_ip - your_public_ip` =
-2. How you confirmed current rules are bad, and why are they bad.
-3. Your implementation details and **screenshot**
-4. Something invalid:
+   - `130.108.0.0 - 130.108.255.255` = `130.108.0.0/16`
+   - `10.0.0.0 - 10.0.0.255` = `10.0.0.0/24`
+   - `69.219.181.247 - 69.219.181.247` = `69.219.181.247/32`
+2. `sudo iptables -L`: shows the current rules for the system's firewall.
+   - Allowing any IP address to connect to any port on my AWS instance is bad practice because it exposes the instance to potential security risks. By allowing connections from any IP address, potential malicious actors could access the instance and compromise its security. This could lead to data breaches, unauthorized access to sensitive information, and other security incidents.
+4. Your implementation details and **screenshot**
+5. Any IP address not from Wright State (), AWS (), or my home network (), will not be allowed to `SSH` in.
 
 ## Extra Credit Answers:
 
