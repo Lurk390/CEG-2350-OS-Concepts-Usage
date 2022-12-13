@@ -40,15 +40,4 @@
    - `69.219.181.247 - 69.219.181.247` = `69.219.181.247/32`
 2. `sudo iptables -L`: shows the current rules for the system's firewall.
    - Allowing any IP address to connect to any port on my AWS instance is bad practice because it exposes the instance to potential security risks. By allowing connections from any IP address, potential malicious actors could access the instance and compromise its security. This could lead to data breaches, unauthorized access to sensitive information, and other security incidents.
-4. Your implementation details and **screenshot**
-5. Any IP address not from Wright State (), AWS (), or my home network (), will not be allowed to `SSH` in.
-
-## Extra Credit Answers:
-
-### Solve the conflict
-
-1.
-2.
-3.
-4.
-5.
+3. Any IP address not from Wright State (), AWS (), or my home network (), will not be allowed to `SSH` in.
